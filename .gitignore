@@ -11,7 +11,9 @@
 # ZYPI compiled output files
 
 hardware/vivado_prj/
-hardware/vivado_out/
+hardware/vivado_out/dcp/
+hardware/vivado_out/rtl_chk/
+hardware/vivado_out/sim/
 
 hw_plat/
 run/vivado_run/

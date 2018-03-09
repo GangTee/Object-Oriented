@@ -48,10 +48,12 @@ vivado_prj: FORCE
 	@echo "Executing $(HW_ACT) for Vivado project..."
 	@mkdir -p $(HW_PLATFORM)
 	$(MAKE) -C ./hardware VIVADO=$(VIVADO_BIN) HW_ACT=$(HW_ACT) HW_VAL="$(HW_VAL)" O=$(HW_PLATFORM) $@
+	@git add -A && git commit -m "autocmt: $@ HW_ACT=$(HW_ACT) HW_VAL="$(HW_VAL)""
 
 bit_bin:
 	@echo "Generating .bit.bin file for system.bit..."
 	$(MAKE) -C ./hardware BOOT_GEN=$(BOOT_GEN_BIN) O=$(HW_PLATFORM) $@
+	@git add -A && git commit -m "autocmt: $@"
 
 #==========================================
 # Cloud environment usage
@@ -60,6 +62,7 @@ cloud_run:
 ifneq (${VPN_USER},none)
 	@mkdir -p ./run/log 
 	@cd ./run && bash $(FPGA_RUN) $(VIVADO_BIN) y cloud $(VPN_USER) | tee ./log/cloud_run.log
+	@git add -A && git commit -m "autocmt: $@"
 else
 	$(error Please correctly set your VPN user name)
 endif
@@ -71,6 +74,7 @@ local_run:
 ifneq (${BOARD_IP},none)
 	@mkdir -p ./run/log 
 	@cd ./run && bash $(FPGA_RUN) $(VIVADO_BIN) n local $(BOARD_IP) | tee ./log/local_run.log
+	@git add -A && git commit -m "autocmt: $@"
 else
 	$(error Please correctly set IP address of the FPGA board)
 endif

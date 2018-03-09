@@ -9,25 +9,9 @@
 #
 
 # ZYPI compiled output files
-bootstrap/boot_bin/
-bootstrap/fsbl/
-bootstrap/hw_plat/
-bootstrap/pmufw/
-bootstrap/.fsbl_gen
-bootstrap/.pmufw_gen
-bootstrap/.Xil
-
-software/atf/
-software/optee_os/
-software/uboot/
-software/kernel_phys_os/
-software/kernel_Dom0/
-software/kernel_DomU/
-software/apps/
 
 hardware/vivado_prj/
 hardware/vivado_out/
 
-ready_for_download/
 hw_plat/
 run/vivado_run/

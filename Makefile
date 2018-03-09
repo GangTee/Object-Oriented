@@ -1,6 +1,6 @@
 # TODO: Change to your Vivado IDE version and installed location
 VIVADO_VERSION ?= 2017.2
-VIVADO_TOOL_BASE ?= /opt/Xilinx_$(VIVADO_VERSION)
+VIVADO_TOOL_BASE ?= /opt/Xilinx
 
 # Vivado and SDK tool executable binary location
 VIVADO_TOOL_PATH := $(VIVADO_TOOL_BASE)/Vivado/$(VIVADO_VERSION)/bin
@@ -58,7 +58,8 @@ bit_bin:
 #==========================================
 cloud_run:
 ifneq (${VPN_USER},none)
-	@cd $(shell pwd)/run && bash $(FPGA_RUN) $(VIVADO_BIN) y cloud $(VPN_USER) | tee ./cloud_run.log
+	@mkdir -p ./run/log 
+	@cd ./run && bash $(FPGA_RUN) $(VIVADO_BIN) y cloud $(VPN_USER) | tee ./log/cloud_run.log
 else
 	$(error Please correctly set your VPN user name)
 endif
@@ -68,7 +69,8 @@ endif
 #==========================================
 local_run:
 ifneq (${BOARD_IP},none)
-	@cd $(shell pwd)/run && bash $(FPGA_RUN) $(VIVADO_BIN) n local $(BOARD_IP) | tee ./local_run.log
+	@mkdir -p ./run/log 
+	@cd ./run && bash $(FPGA_RUN) $(VIVADO_BIN) n local $(BOARD_IP) | tee ./log/local_run.log
 else
 	$(error Please correctly set IP address of the FPGA board)
 endif

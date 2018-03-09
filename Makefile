@@ -48,7 +48,7 @@ vivado_prj: FORCE
 	@echo "Executing $(HW_ACT) for Vivado project..."
 	@mkdir -p $(HW_PLATFORM)
 	$(MAKE) -C ./hardware VIVADO=$(VIVADO_BIN) HW_ACT=$(HW_ACT) HW_VAL="$(HW_VAL)" O=$(HW_PLATFORM) $@
-	@git add -A && git commit -m "autocmt: $@ HW_ACT=$(HW_ACT) HW_VAL="$(HW_VAL)""
+	@git add -A && git commit -m "autocmt: $@ HW_ACT=$(HW_ACT) HW_VAL=\"$(HW_VAL)\""
 
 bit_bin:
 	@echo "Generating .bit.bin file for system.bit..."

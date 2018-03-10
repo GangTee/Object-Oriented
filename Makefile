@@ -53,7 +53,6 @@ vivado_prj: FORCE
 bit_bin:
 	@echo "Generating .bit.bin file for system.bit..."
 	$(MAKE) -C ./hardware BOOT_GEN=$(BOOT_GEN_BIN) O=$(HW_PLATFORM) $@
-	@git add -A && git commit -m "autocmt: $@"
 
 #==========================================
 # Cloud environment usage

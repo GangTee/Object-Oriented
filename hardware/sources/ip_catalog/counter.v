@@ -10,6 +10,28 @@ module counter(
     input [7:0] state,
     output reg [31:0] counter
 	);
+parameter [7:0] STATE_RESET = 8'd0,
+		STATE_RUN = 8'd1,
+		STATE_HALT = 8'd2;
+
+always@(posedge clk)
+begin
+	case(state)
+	STATE_RESET:
+	begin
+		counter <= 0;
+	end
+	STATE_HALT: ;
+	STATE_RUN: 
+	begin
+		counter <= ((counter<interval) ? (counter+1) : counter);
+	end
+	default: 
+	begin
+		counter <= 0;
+	end
+	endcase
+end
 
 	/*TODO: Add your logic code here*/
     

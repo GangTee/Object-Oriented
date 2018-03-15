@@ -197,17 +197,17 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:01:02 . Memory (MB): peak = 1400.953 ; gain = 311.008 ; free physical = 219 ; free virtual = 4163
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.949 ; gain = 311.008 ; free physical = 293 ; free virtual = 4226
 Command: synth_design -rtl -rtl_skip_constraints -rtl_skip_ip -top adder
 Starting synth_design
 Using part: xczu2eg-sfva625-1-e
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1400.961 ; gain = 0.000 ; free physical = 84 ; free virtual = 4084
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1400.957 ; gain = 0.000 ; free physical = 144 ; free virtual = 4133
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'adder' [/home/cod/prj0-GangTee/hardware/sources/ip_catalog/adder.v:3]
 INFO: [Synth 8-256] done synthesizing module 'adder' (1#1) [/home/cod/prj0-GangTee/hardware/sources/ip_catalog/adder.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.961 ; gain = 0.000 ; free physical = 203 ; free virtual = 4161
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.957 ; gain = 0.000 ; free physical = 203 ; free virtual = 4152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -217,22 +217,22 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1400.961 ; gain = 0.000 ; free physical = 202 ; free virtual = 4162
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.957 ; gain = 0.000 ; free physical = 203 ; free virtual = 4154
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xczu2eg-sfva625-1-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1735.812 ; gain = 334.852 ; free physical = 61 ; free virtual = 3605
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:59 . Memory (MB): peak = 1735.809 ; gain = 334.852 ; free physical = 61 ; free virtual = 3622
 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:01:31 . Memory (MB): peak = 1735.812 ; gain = 334.859 ; free physical = 61 ; free virtual = 3605
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:01:11 . Memory (MB): peak = 1735.809 ; gain = 334.859 ; free physical = 77 ; free virtual = 3563
 Command: synth_design -rtl -rtl_skip_constraints -rtl_skip_ip -top counter
 Starting synth_design
 Using part: xczu2eg-sfva625-1-e
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1780.812 ; gain = 44.992 ; free physical = 60 ; free virtual = 3535
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1780.809 ; gain = 44.992 ; free physical = 62 ; free virtual = 3552
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'counter' [/home/cod/prj0-GangTee/hardware/sources/ip_catalog/counter.v:7]
 	Parameter STATE_RESET bound to: 8'b00000000 
@@ -240,7 +240,7 @@ INFO: [Synth 8-638] synthesizing module 'counter' [/home/cod/prj0-GangTee/hardwa
 	Parameter STATE_HALT bound to: 8'b00000010 
 INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [/home/cod/prj0-GangTee/hardware/sources/ip_catalog/counter.v:7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 1894.062 ; gain = 158.242 ; free physical = 218 ; free virtual = 3599
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:30 . Memory (MB): peak = 1894.059 ; gain = 158.242 ; free physical = 202 ; free virtual = 3596
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -250,14 +250,14 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1894.062 ; gain = 158.242 ; free physical = 214 ; free virtual = 3599
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 1894.059 ; gain = 158.242 ; free physical = 197 ; free virtual = 3596
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:42 . Memory (MB): peak = 1898.070 ; gain = 162.250 ; free physical = 168 ; free virtual = 3600
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:44 . Memory (MB): peak = 1898.066 ; gain = 162.250 ; free physical = 143 ; free virtual = 3599
 10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:01:01 . Memory (MB): peak = 1898.070 ; gain = 162.258 ; free physical = 168 ; free virtual = 3600
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 12:39:35 2018...
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:01:06 . Memory (MB): peak = 1898.066 ; gain = 162.258 ; free physical = 143 ; free virtual = 3599
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 13:20:11 2018...

@@ -9,11 +9,12 @@ module counter_test
     reg [39:0]          state_info;
 
     wire [31:0]     counter;
-
+reg [31:0] times;
 	initial begin
 		clk = 1'b1;
 		interval = 32'd1;
 		state = 0;
+		times = 0;
 		forever begin
 		  repeat(5)
 		  begin

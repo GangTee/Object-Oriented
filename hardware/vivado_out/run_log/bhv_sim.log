@@ -197,7 +197,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1400.957 ; gain = 311.008 ; free physical = 264 ; free virtual = 4228
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 1400.949 ; gain = 311.008 ; free physical = 265 ; free virtual = 4201
 INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [USF-XSim-7] Finding pre-compiled libraries...
@@ -237,9 +237,9 @@ Built simulation snapshot counter_test_behav
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source /home/cod/prj0-GangTee/hardware/vivado_prj/prj_0/prj_0.sim/sim_1/behav/xsim.dir/counter_test_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Mar 15 13:39:26 2018...
-run_program: Time (s): cpu = 00:00:00.71 ; elapsed = 00:00:14 . Memory (MB): peak = 1431.523 ; gain = 0.000 ; free physical = 119 ; free virtual = 4212
-INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 15 14:00:00 2018...
+run_program: Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:15 . Memory (MB): peak = 1431.516 ; gain = 0.000 ; free physical = 105 ; free virtual = 4182
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cod/prj0-GangTee/hardware/vivado_prj/prj_0/prj_0.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
@@ -253,5 +253,5 @@ source /home/cod/prj0-GangTee/hardware/scripts/sim/xsim_run.tcl
 ## get_waves *
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'counter_test_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 2us
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:40 . Memory (MB): peak = 1472.082 ; gain = 71.125 ; free physical = 99 ; free virtual = 4210
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 13:39:36 2018...
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:53 . Memory (MB): peak = 1472.074 ; gain = 71.125 ; free physical = 85 ; free virtual = 4179
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 14:00:18 2018...

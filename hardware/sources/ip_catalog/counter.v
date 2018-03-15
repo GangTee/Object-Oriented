@@ -25,7 +25,7 @@ begin
 	STATE_HALT: ;
 	STATE_RUN: 
 	begin
-		times <= ((times<interval) ? (times+1) : 0);
+		times <= ((times<interval) ? (times+1) : interval);
 		counter <= ((times==interval) ? (counter+1) : counter);
 	end
 	default: 

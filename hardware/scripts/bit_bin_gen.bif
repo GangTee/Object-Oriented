@@ -1,4 +1,0 @@
-all:
-{
-	../hw_plat/system.bit
-}
